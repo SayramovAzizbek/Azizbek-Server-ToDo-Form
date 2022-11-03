@@ -1,0 +1,81 @@
+.register-body {
+    background: rgb(130, 76, 187);
+    background: linear-gradient(180deg, rgba(130, 76, 187, 1) 0%, rgba(54, 167, 204, 1) 100%);
+}
+
+.form-register-box {
+    max-width: 500px;
+    margin: 146px auto;
+}
+
+.form-register-title {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background-color: #262157;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    background-color: #2C2B69;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.reg-input {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.input-password-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.register-input-password {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+}
+
+.register-input-password-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/lock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.register-input-password-btn--on {
+    background-image: url("../images/unlock.png");
+}
+
+.regsiter-btn-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.register-btn {
+    margin-top: 20px;
+    padding: 10px 40px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #60B12B;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
