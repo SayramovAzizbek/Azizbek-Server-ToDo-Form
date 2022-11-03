@@ -1,6 +1,6 @@
 .register-body {
-    background: rgb(130, 76, 187);
-    background: linear-gradient(180deg, rgba(130, 76, 187, 1) 0%, rgba(54, 167, 204, 1) 100%);
+    background: #824cbb;
+    background: linear-gradient(180deg, #824cbb 0%, #36a7cc 100%);
 }
 
 .form-register-box {
