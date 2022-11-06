@@ -1,9 +1,16 @@
 let tokenLogin = window.localStorage.getItem("tokenLogin");
+let tokenRegister = window.localStorage.getItem("token");
 const todoForm = document.querySelector(".todo-form");
 const todoInput = document.querySelector(".todo-input");
 const todoList = document.querySelector(".todo-list");
 const todoTemplate = document.querySelector(".todo-template").content;
+
 if (!tokenLogin) {
+  window.location.reload();
+  window.location.pathname = "login.html";
+}
+
+if (!tokenRegister) {
   window.location.reload();
   window.location.pathname = "login.html";
 }
