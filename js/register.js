@@ -20,13 +20,8 @@ registerForm.addEventListener("submit", (evt) => {
   let registerInputEmailValue = registerInputEmail.value;
   let registerInputNumberValue = registerInputNumber.value;
   let registerInputPasswordValue = registerInputPassword.value;
-  console.log({
-    registerInputUserNameValue,
-    registerInputEmailValue,
-    registerInputNumberValue,
-    registerInputPasswordValue,
-  });
-  fetch("http://192.168.4.70:5000/user/register", {
+
+  fetch("http://192.168.0.105:5000/user/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -40,7 +35,6 @@ registerForm.addEventListener("submit", (evt) => {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       window.localStorage.setItem("token", userToken);
       window.location.pathname = "index.html";
     })

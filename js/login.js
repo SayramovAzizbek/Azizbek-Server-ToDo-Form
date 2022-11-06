@@ -9,11 +9,8 @@ loginForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
   let loginInputEmailValue = loginInputEmail.value;
   let loginInputPasswordValue = loginInputPassword.value;
-  console.log({
-    loginInputEmailValue,
-    loginInputPasswordValue,
-  });
-  fetch("http://192.168.4.70:5000/user/login", {
+
+  fetch("http://192.168.0.105:5000/user/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -25,7 +22,6 @@ loginForm.addEventListener("submit", (evt) => {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       window.localStorage.setItem("tokenLogin", data.token);
       window.location.pathname = "index.html";
     })
