@@ -35,7 +35,7 @@ registerForm.addEventListener("submit", (evt) => {
   })
     .then((res) => res.json())
     .then((data) => {
-      window.localStorage.setItem("token", userToken);
+      window.localStorage.setItem("token", data.token);
       window.location.pathname = "index.html";
     })
     .catch((err) => console.log(err));
