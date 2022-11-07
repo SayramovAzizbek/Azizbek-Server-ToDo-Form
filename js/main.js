@@ -12,7 +12,7 @@ if (!tokenLogin) {
 
 if (!tokenRegister) {
   window.location.reload();
-  window.location.pathname = "login.html";
+  window.location.pathname = "register.html";
 }
 
 function postToDo() {
