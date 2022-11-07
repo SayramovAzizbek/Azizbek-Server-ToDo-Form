@@ -5,6 +5,11 @@ const loginInputPasswordBtn = document.querySelector(
   ".login-input-password-btn"
 );
 
+if (!tokenRegister) {
+  window.location.reload();
+  window.location.pathname = "register.html";
+}
+
 loginForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
   let loginInputEmailValue = loginInputEmail.value;
