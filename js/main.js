@@ -10,6 +10,11 @@ if (!tokenLogin) {
   window.location.pathname = "login.html";
 }
 
+if (!tokenRegister) {
+  window.location.reload();
+  window.location.pathname = "register.html";
+}
+
 function postToDo() {
   try {
     fetch("http://192.168.0.105:5000/todo", {
